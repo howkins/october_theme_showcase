@@ -1,0 +1,48 @@
+title = "About the project"
+url = "/about"
+layout = "default"
+meta_description = "about page"
+is_hidden = 0
+seo_keywords = "keywords"
+robot_index = "index"
+robot_follow = "follow"
+
+[accordion]
+maxItems = 10
+accordion = 1
+elementId = "accordion-about"
+active = 0
+collapsible = "true"
+heightStyle = "content"
+iconsHeader = "ui-icon-plus"
+iconsHeaderActive = "ui-icon-minus"
+
+[siteSearchInclude]
+
+[jumbotron wp]
+jumbotron = "working-packages"
+title = 1
+
+[jumbotron]
+jumbotron = "about-context"
+title = 1
+background = "#ffffff"
+
+[jumbotron jumbotron2]
+jumbotron = "main-objectives"
+title = 1
+
+[jumbotron jumbotron3]
+jumbotron = "main-activities"
+title = 1
+background = "#FFFFFF"
+==
+{% component 'siteSearchInclude' %}
+
+{% component 'jumbotron' %}
+
+{% component 'jumbotron2' %}
+
+{% component 'jumbotron3' %}
+
+{% component 'wp' %}
